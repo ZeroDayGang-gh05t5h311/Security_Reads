@@ -1,0 +1,132 @@
+Hi my name is gh05t5h311(just a play on words, if you know, you know), I've been  a big fan of computer security and tech for a fair few years now.
+
+Just as a hobbyist for fun, fame: just because I can. But in this world things like that are a luxury: with that in mind please enjoy this small write up that aims to help people with basic computer security for the web.
+
+This is is web security defense for mere mortals....
+
+So everyone whom aims at good security on a deep technical level will tell you that it is best in layers, and maybe that can
+work for people that are programmers, security people or system admins(maybe). But the much like the mantra same origin policy (if you're not sure what that is: https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy) it is the "user" that needs we fight for! Let's take a bit of a deep dive(without getting too technical) into browser security.
+
+For most people, a browser is just a window to the internet. Chrome, Firefox, Safari—whatever:
+To mere mortals, browsers are simple: you click, you search, you watch videos, you shop, you live online.
+But beneath that friendly search bar lies one of the most complex, attack-prone pieces of software ever shipped to billions of people. Browsers juggle JavaScript engines, rendering pipelines, extension ecosystems, GPU interfaces, sandbox layers, networking stacks, and dozens of built-in APIs—all running tens of thousands of lines of code every time a webpage loads
+And for a decade straight, attackers have treated browsers as a prime hunting ground.
+The stories below—spanning 2015 through 2025—show how browser attacks evolved from noisy adware pop-ups and shady Flash exploits into silent, surgical zero-days and billion-user supply-chain compromises.
+This is the story of how clicking a link became a geopolitical hazard, how a wallpaper extension became a remote-control hacking tool, and how your browser became the most important (and most dangerous) program you own.
+
+THE ERA OF EXPLOIT KITS (2015-17) When Ads Tried to Kill You
+
+Back in 2015, the danger came not from the websites you visited, but from the ads those websites trusted. Attackers built industrial-scale “exploit kits” like Angler, Nuclear, and RIG, which hid inside banner ads on legitimate news and shopping sites that the website(s) you where trying to visit in the could not see(in many cases). You did not need to click the ad. You didn’t even need to see it. If the malicious JavaScript loaded, the exploit kit scanned your browser, Flash plugin, Java plugin, and Windows version. If you matched one of their vulnerabilities—boom: ransomware, banking Trojans, botnet malware, whatever they wanted. 
+It was the Wild West of “malvertising.” Entire ad networks became the new crime infrastructure. Millions of users were infected in this era, often without ever understanding what happened. This is also the era when people said, “Just don’t click anything suspicious,” not realizing that doing nothing at all could still compromise them. 
+
+Spectre & Meltdown (2018): When Browsers Became a CPU Threat Surface
+
+January 2018 delivered one of the most surreal discoveries in modern computing: CPU hardware flaws that allowed malicious JavaScript to read memory it should never have touched. Your browser—yes, the place you watch cat videos—could be tricked into leaking passwords, encryption keys, and sensitive data through microscopic timing differences in JavaScript execution. The web responded with: Reduced JavaScript timers, site isolation and Emergency browser updates across the globe. This was the moment browsers became treated like full operating systems, not just viewers of information.
+
+Chrome & Firefox Zero-Days (2018–2019): The Rise of Targeted Exploitation
+
+By 2018 and 2019, attackers shifted heavily toward memory corruption vulnerabilities in browser engines themselves—especially:
+Chrome’s V8 engine, Firefox’s IonMonkey JIT compiler these were not spam campaigns or random infections. These were surgical, often nation-state-level attacks. A single malicious website or link—sometimes sent privately to journalists, activists, or political targets—could trigger a chain of memory corruption bugs, eventually letting the attacker run arbitrary code outside the browser sandbox. This era marked the beginning of “zero-days as weapons.” 
+
+THE SUPPLY-CHAIN REVOLUTION (2020–2024) 
+
+When the Attackers Took Over the Update System as browsers hardened their engines and exploit kits faded, attackers found a more elegant path: Why break into the browser when you can hijack the code people voluntarily install? Extensions Become Malware Factories Browser extensions became the new frontier of exploitation. Why? Because users install them for: discounts, emojis, wallpapers, “Free coupons”, productivity tools(now mostly replaced by A.I) all of which quietly request permissions like: “Read and change all your data on all websites”, “Access your browser tabs”, “Manage your downloads”,Most users click “Allow” without thinking., This trust set the stage for the most dramatic example of all…
+
+
+THE SHADYPANDA ERA (2023–2025):
+
+The Long Con That Let Hackers In Through the Front Door, imagine installing a harmless wallpaper extension in 2019. It works fine.
+You forget it exists. Five years later—it turns into a hacking tool. That’s ShadyPanda, a massive multi-year browser-extension supply-chain compromise revealed in late 2025. Extensions with millions of installs—some verified, some featured—slowly received “updates” that added: Cookie theft, Session hijacking, Search redirection, data exfiltration, remote code execution via downloaded JavaScript, And it all happened through the official Chrome and Edge extension update systems. No phishing. no shady downloads. No suspicious behavior: just seemingly normal updates. It’s the perfect crime: exploit people’s trust in the platform.
+
+MODERN ZERO-DAY WARFARE (2025):
+When Clicking a Link Was Enough to Get Hacked, 2025 became the most active year for browser zero-days in recent history.
+Multiple high-severity bugs in Chrome’s V8 engine, along with a critical Mojo IPC sandbox escape, were exploited in the wild—often by advanced threat actors: CVE-2025-2783 — Sandboxed attacked via malicious link Used in “Operation ForumTroll,” targeting journalists and political organizations. CVE-2025-6554 — V8 type confusion, Allowed crafted HTML to break memory protections and run code. CVE-2025-13223 — Heap corruption RCE, Another attack via simple webpage load. In several cases, the victim merely clicked a link—or visited a compromised site—and the exploit chain executed invisibly. This marked the full maturation of the “drive-by” attack, now powered not by ad networks or plugins, but deep engine-level vulnerabilities. 
+
+browser_exploitation_timeline:
+  - year: 2025
+    case: "ShadyPanda Extension Supply-Chain Attack"
+    attack_vector: "Malicious extension updates via Chrome & Edge stores"
+    impact: "4.3M users compromised; 145 extensions weaponized"
+    category: "Supply-chain compromise"
+    sources: [techradar_2025, esecurityplanet_2025, scmedia_2025]
+  - year: 2025
+    case: "Chrome Zero-Day CVE-2025-2783 (ForumTroll)"
+    attack_vector: "Mojo IPC sandbox escape triggered via malicious link"
+    impact: "Targeted espionage, journalists & orgs compromised"
+    category: "Targeted RCE"
+    sources: [techcrunch_2025, kaspersky_2025]
+  - year: 2025
+    case: "Chrome Zero-Day CVE-2025-6554"
+    attack_vector: "V8 type confusion → arbitrary memory read/write"
+    impact: "Full RCE on all Chromium browsers"
+    category: "Engine-level exploitation"
+    sources: [computing_2025, nvd_cve_2025_6554]
+  - year: 2025
+    case: "Chrome Zero-Day CVE-2025-13223"
+    attack_vector: "Heap corruption in V8 triggered by crafted HTML"
+    impact: "Wide exposure through normal browsing"
+    category: "Memory corruption RCE"
+    sources: [thehackernews_2025]
+  - year: 2020
+    case: "IE Zero-Day CVE-2020-0674"
+    attack_vector: "JScript engine memory corruption"
+    impact: "Nation-state exploitation in wild"
+    category: "Legacy engine attack"
+    sources: [microsoft_advisory_2020, trendmicro_2020]
+  - year: 2019
+    case: "Chrome Zero-Day Trio (FileReader, PDFium, Audio)"
+    attack_vector: "Use-after-free vulnerabilities triggered via malicious pages"
+    impact: "Targeted attacks globally"
+    category: "RCE exploit chain"
+    sources: [google_blog_2019, kaspersky_2019]
+  - year: 2019
+    case: "Firefox IonMonkey Zero-Day CVE-2019-17026"
+    attack_vector: "JIT compiler type confusion"
+    impact: "Middle East espionage targeting"
+    category: "Engine-level RCE"
+    sources: [mozilla_security_2019, talos_2019]
+  - year: 2018
+    case: "Chrome Zero-Day CVE-2018-8653"
+    attack_vector: "V8 type confusion"
+    impact: "Active wild exploitation"
+    category: "JS engine exploitation"
+    sources: [microsoft_2018, google_release_notes_2018]
+  - year: 2018
+    case: "Spectre & Meltdown Browser Exploitation"
+    attack_vector: "JavaScript-based microarchitectural leakage"
+    impact: "All major browsers forced into emergency redesign"
+    category: "Side-channel attack"
+    sources: [google_project_zero_2018, meltdown_paper_2018]
+  - year: 2015-2024
+    case: "Magecart Payment Skimming Epidemic"
+    attack_vector: "Client-side JS injection stealing credit card data"
+    impact: "Hundreds of e-commerce breaches including BA & Ticketmaster"
+    category: "Supply-chain + client-side compromise"
+    sources: [riskIQ_2018, ponemon_2019]
+  - year: 2015-2017
+    case: "Malvertising / Exploit Kit Era (Angler, Nuclear, RIG)"
+    attack_vector: "Banner ads loading exploit kits via JS"
+    impact: "Millions infected via legitimate websites"
+    category: "Drive-by exploitation"
+    sources: [malwarebytes_2016, trendmicro_2016]
+  - year: 2015
+    case: "Hacking Team Browser Exploit Dumps"
+    attack_vector: "Leaked zero-days for Flash/IE/Chrome"
+    impact: "State-level exploits go mainstream"
+    category: "Zero-day proliferation"
+    sources: [citizenlab_2015, ars_technica_2015]
+
+TAKEAWAYS FOR MERE MORTALS:
+Browsers have become full operating systems, not simple viewers, JavaScript engines (V8, SpiderMonkey) are incredibly complex—and incredibly attackable. Extensions are the new Trojan horses. Automatic updates are both your greatest defense and a terrifying attack surface. A single click on a malicious link can compromise the entire machine. Modern attacks leave no pop-ups, no weird behavior, no crash alerts—nothing. The average user doesn’t have to panic—just stay updated, be cautious with extensions, and treat your browser like the critical, high-risk application it is... I don't write this to spread FUD(fear uncertainty doubt), I do so that the information is out there for people to have that knowledge and that it will help them to be more secure.
+
+Some things that may help with this are no-script: https://noscript.net 
+
+Sorry I know it's a hard sell to mere mortals but I really will help protect you from allot of these kinds of things, there is also a light version of it too that's a bit more user friendly.
+
+Just generally having a good password very random password like "x829u8Qin8d!" and making sure to not re-use passwords.
+
+But the number one thing that will help save you as a user is just general common sense when It comes to making informed choices about the company's that you give your data too... you can't steal the data of a person whom did not give real data that could be tied from their online life to their real one. That information is only valuable to hackers/company's so much as they can use it!
+
+
+More to come on this soon.
+
