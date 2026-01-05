@@ -123,3 +123,9 @@ Modern attacks are often completely invisible. Good security hygiene still matte
 minimal extensions, staying updated, and being mindful of which companies you trust with your data. Most importantly, 
 attackers and companies can only misuse the data you choose to provide. Separating your online identity from your real one limits what can be taken from you. 
 _____________________________________________________________________________________________________________________
+UPDATE(05/02/25):
+
+So this was just a very short write-up I really hope it has helped at least one person better understand how to take steps to do your best to stay safe online. 
+Now it's time(in a short time) to write about some vulnerabilities that I myself, have found: personally I'm not much of a writer at all so It's never really something I leaned into thus far in my programming/computer science experience. 
+So short bit of information: had been seeing an reading allot about why I don't do more research publicly: well to be honest I was not really working very much with computers last year(it is just a hobby for me), plus mostly my focus was on programming/software development. Just another dagger to keep sharp; so to speak, a great reason for not talking/writing about certain bugs is that even if they have been "patched"; someone may find a way around that patch and that's kinda not cool to be exposing that when the point of reporting bugs(other than getting payed) is to help secure technology. 
+That being said however there are some things that I would like to share in the future as it is kinda odd that one of the top members of the Zero-Day-Gang does not write about 0days. They post code; my apologizes for being a let down in the past: here I am; let's do this.
