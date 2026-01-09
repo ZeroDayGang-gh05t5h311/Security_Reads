@@ -1,0 +1,35 @@
+Random Security ramble writing.....[basically a text blog thing]
+
+[09/01/2026]
+"Hello Friend", yea that was kind of lame: but not as lame as all the mistakes in the only hacker show that(and I'm paraphrasing here): "make me not want to throw anything at the T.V by the end of the first series". Anyway: cheap ploy to get you're attention aside: What is computer security? Well, in it's most basic scene it means making sure that devices/software are only accessed by authorized users. So today I have not really done anything much as IRL I had a few things to do.  I am so sorry for the mistakes I've made in the past I'm just trying my best to learn from them an do much better in the future, not being so lazy: abstaining from alcohol and the like. It's a hangover from the person I was: to the man I'm working to become: it will take some time but have a feeling it will be worth it.
+
+So this week I have refactored some of the code base for a few things:
+
+https://github.com/ZeroDayGang-gh05t5h311/Security_Demo_Web_App
+
+All but the cpp file(don't have the required libarys for SQL on this box though that was my first choice for back-end)
+
+Fixed and improved this in various ways:
+
+https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/PortPeep.py
+
+Made an untested powershell version: 
+
+https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/PortPeep.ps1
+
+A loverly sea-plus-plus version:
+
+https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/PortPeep.cpp
+
+And updated this a bit:
+
+https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/SysNyAdminEnny.cpp
+
+And updated this quite a bit:
+
+https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/Sila.cpp
+
+
+Plus study a bit for serious upcoming projects... hopefully,much more to come. 
+
+- gh05t5h311
