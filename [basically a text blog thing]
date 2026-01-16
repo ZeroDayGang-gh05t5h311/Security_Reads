@@ -1,11 +1,6 @@
 Random Security ramble writing.....[basically a text blog thing]
 [09/01/2026]
-"Hello Friend", yea that was kind of lame: but not as lame as all the mistakes in the only hacker show that(and I'm paraphrasing here): 
-"make me not want to throw anything at the T.V by the end of the first series". Anyway: cheap ploy to get you're attention aside: 
-What is computer security? Well, in it's most basic sense, it means making sure that devices/software are only accessed by authorized users.
-So today I have not really done anything much as IRL I had a few things to do. I am so sorry for the mistakes I've made in the past I'm just trying my 
-best to learn from them an do much better in the future, not being so lazy: abstaining from alcohol and the like. It's a hangover from the person I was: 
-to the man I'm working to become: it will take some time but have a feeling it will be worth it.
+"Hello Friend", yea that was kind of lame: but not as lame as all the mistakes in the only hacker show that(and I'm paraphrasing here): "make me not want to throw anything at the T.V by the end of the first series". Anyway: cheap ploy to get you're attention aside: What is computer security? Well, in it's most basic sense it means making sure that devices/software are only accessed by authorized users. So today I have not really done anything much as IRL I had a few things to do. I am so sorry for the mistakes I've made in the past I'm just trying my best to learn from them an do much better in the future, not being so lazy: abstaining from alcohol and the like. It's a hangover from the person I was: to the man I'm working to become: it will take some time but have a feeling it will be worth it.
 
 So this week I have refactored some of the code base for a few things:
 
@@ -35,6 +30,56 @@ https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/Sila.cpp
 
 
 Plus studied a bit for serious upcoming projects... hopefully, much more to come. 
+
+- gh05t5h311
+
+
+[16/01/2026]
+
+Just a little mid-week report, updated this:
+https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/Addison.py
+It's modular now and yes I will be working hard on CVES and CVES_ASM as stand-alone script and here in Addison.
+Also updated this:
+https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/PortPeep.sh
+
+Pretty neat for shell script but the python or cpp version may be more people's fancy..
+
+BONUS:
+
+would you like to know a cheap but kinda slick way to break wpa2 and possibly wpa3 networks? Well read on...
+firstly you will need to be somewhat aware of and have the ability to run:
+https://www.aircrack-ng.org/doku.php?id=airmon-ng
+and:
+https://www.aircrack-ng.org/doku.php?id=aireplay-ng
+and also: 
+https://github.com/t6x/reaver-wps-fork-t6x
+https://code.google.com/archive/p/reaver-wps <(the original verison)
+
+The process of the attack is fairly simple: 
+
+Run airodump-ng to get a list of target AP's!
+
+Find and AP you want to attack(don't worry if wps is not enabled)
+
+Get the mac address of the router and start de-authing it...(any tool's that have this functionality can be use for it this is just what I recommend). Then with the right timing run the reaver attack against the target AP...
+
+NOTE: Timing is everything to this attack and some vendor's have patched it(or at least the ability to de-auth them(thus stopping part of the attack.))
+
+What it should do if the timing is correct is give you either the WPA2 password in plaintext...
+or the wps password(even if it's not enabled), and then you can use either to connect to the target AP.
+
+Also should note that this is not a new attack: I found this back in 2015 when I was a pure script kiddie...
+Just wanted to bring attention to it as some people may be vulnerable. Also I don't know if it works against WPA3.
+I used this back in 2015-2017 against all major provider's in the U.K and it worked: EE, BT, Virgin, NetGear... ALL OF THEM! 
+Now there is a little caveat to this attack in the sense that being a script kiddie back then I did not keep documentation nor notes or anything... 
+I just broke into sh*t. So sorry I can't be of more help enumerating devices that may be vulnerable to this attack. 
+Don't even know what to call it as it's not really an "0day" or anything.  But it is certainly a very nasty attack.  Can it be pulled off today?  
+I have no idea: would say the biggest caveat to that would be that routers are allot smarter in the way the respond-
+to de-auth packets than they where 8-10 years ago when this was first discovered: but please In a legal and ethical way: 
+feel free to do the research and find out what's vulnerable.  Again the timing is very key so try to have a few terminal windows open so 
+that when the router goes down you can run that REAVER attack against it in a promptly fashion. Now I suspect(thanks to watching the movie "algorithm" 
+after i found it btw). That the way this works is that is taking advantage of the fact that the firewall loads last. Again sorry for the lack of info 
+about firmware versions and things but there may be ways to pull this off with more modern firmware's with some persistence... enjoy.
 
 - gh05t5h311
 
