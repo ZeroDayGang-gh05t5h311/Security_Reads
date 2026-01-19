@@ -61,23 +61,42 @@ Run airodump-ng to get a list of target AP's!
 
 Find and AP you want to attack(don't worry if wps is not enabled)
 
-Get the mac address of the router and start de-authing it...(any tool's that have this functionality can be use for it this is just what I recommend). Then with the right timing run the reaver attack against the target AP...
-
-NOTE: Timing is everything to this attack and some vendor's have patched it(or at least the ability to de-auth them(thus stopping part of the attack.))
-
-What it should do if the timing is correct is give you either the WPA2 password in plaintext...
+Get the mac address of the router and start de-authing it...(any tool's that have this functionality can be use 
+for it this is just what I recommend). Then with the right timing run the reaver attack against the target AP...NOTE:
+Timing is everything to this attack and some vendor's have patched it(or at least the ability to de-auth them(thus 
+stopping part of the attack.))What it should do if the timing is correct is give you either the WPA2 password in plaintext...
 or the wps password(even if it's not enabled), and then you can use either to connect to the target AP.
 
 Also should note that this is not a new attack: I found this back in 2015 when I was a pure script kiddie...
 Just wanted to bring attention to it as some people may be vulnerable. Also I don't know if it works against WPA3.
-I used this back in 2015-2017 against all major provider's in the U.K and it worked: EE, BT, Virgin, NetGear... ALL OF THEM! 
-Now there is a little caveat to this attack in the sense that being a script kiddie back then I did not keep documentation nor notes or anything... I just broke 
-into sh*t. So sorry I can't be of more help enumerating devices that may be vulnerable to this attack. Don't even know what to call it as it's not really an "0day" 
-or anything. But it is certainly a very nasty attack.  Can it be pulled off today?  I have no idea: would say the biggest caveat to that would be that 
-routers are allot smarter in the way the respond to de-auth packets than they where 8-10 years ago when this was first discovered: but please In a legal and ethical way: 
-feel free to do the research and find out what's vulnerable.  Again the timing is very key so try to have a few terminal windows open so that when the router 
-goes down you can run that REAVER attack against it in a promptly fashion. Now I suspect(thanks to watching the movie "algorithm" after i found it btw). That the way this works is that is taking advantage of the fact that the firewall loads last. Again 
-sorry for the lack of info about firmware versions and things but there may be ways to pull this off with more modern firmware's with some persistence... enjoy.
+I used this back in 2015-2017 against all major provider's in the U.K and it worked: EE, BT, Virgin, NetGear... ALL OF THEM! Now there is a little caveat to this attack in the sense that being a script kiddie back then I did not keep documentation nor notes or anything... I just broke into sh*t. So sorry I can't be of more help enumerating devices that may be vulnerable to this attack. Don't even know what to call it as it's not really an "0day" or anything.  But it is certainly a very nasty attack.  Can it be pulled off today?  I have no idea: would say the biggest caveat to that would be that routers are allot smarter in the way the respond to de-auth packets than they where 8-10 years ago when this was first discovered: but please In a legal and ethical way: feel free to do the research and find out what's vulnerable.  Again the timing is very key so try to have a few terminal windows open so that when the router goes down you can run that REAVER attack against it in a promptly fashion. Now I suspect(thanks to watching the movie "algorithm" after i found it btw). That the way this works is that is taking advantage of the fact that the firewall loads last. Again sorry for the lack of info about firmware versions and things but there may be ways to pull this off with more modern firmware's with some persistence... enjoy.
+
+- gh05t5h311
+
+[19/01/26]
+
+Hello again reader:
+
+Last week was very light in terms of output: won't lie that was by design a little, to explain:
+As Mentioned previously: I'm moving on to other projects more(mostly bug bounty's but maybe open to other things):
+
+So I've been taking steps to slowly make that adjustment. Don't want to just abandon the code on here though most of the programming I do from the end of this first quarter will not be public: Still i could not stand to just leave this in such disarray so have been slowly fixing things... today: 
+
+ https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/CVES.cpp
+
+Works great now... as does:
+
+https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/CVES(POC).py
+
+and:
+
+https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/BanScan.cpp
+
+Had a bit of fun playing with all 3 a bit today and may have more to do but sadly for most of the code hosted: it 
+will basically be left by the wayside as I move forward.
+Oh and just for the fun of it I thought I would doxx myself and show you a cheeky logic bug that led to a 
+full account takeover. so check that out on my X account... will be linked to a video from my old profile... 
+that was fun to look over aha. Anyway: look forward to the future: enjoy!
 
 - gh05t5h311
 
