@@ -100,3 +100,56 @@ that was fun to look over aha. Anyway: look forward to the future: enjoy!
 
 - gh05t5h311
 
+[01/02/26]
+
+So it's been a little while: lot's of fun/interesting changes in my personal life, been really
+enjoying what I've been working on lately: mostly lot's of studying for future skills/exams; plus 
+had quite a bit going on IRL. I did manage to update this a bit: 
+
+https://github.com/ZeroDayGang-gh05t5h311/Security_Demo_Web_App
+
+Bit more functional but still  not quite what I wanted it to be, will certainly have to
+brush up on my skills and make it a bit more interesting in the future. Much cleaner
+overall though so happy with that for now.
+
+
+https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/cmdinjscan.py
+
+Happy with how it is shaping up but still leaves a lot to be desired in terms of reliable functionality.
+
+
+https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/cmdinjscanner.cpp
+
+Same with this too... definitely have some things to work on in private and eventually make public.
+
+this will be very much ongoing as with Addison:
+
+https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/Charli_0.7.2.cpp
+
+Likely to be fewer and far between than previous updates due to new security specific work.
+
+This I'm kind of exited about: 
+
+https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/Sila.cpp
+
+Really nice banner scanner!
+
+https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/sila.go
+
+and there is a go version of it!
+
+Speaking of go this is the reason I got into it:
+
+https://github.com/ZeroDayGang-gh05t5h311/SearchAbuse/blob/main/SES.go(save%20as%20main.go)
+
+had written a python version of it (co-authored) that was pretty bad and relied upon some
+just horrible packages to run.... but It got me thinking if there was a language better suited to 
+the software I was trying to make. And turns out Golang is a great solution(hence why I ported sila to it).
+
+Not that the packages where horrible as with the problems I had with the python version of SES but still 
+Goolang seemed and has been a great choice: few more tools I may port to it but defiantly got to get
+a bit more of security based focus, and may take away a bit from what I do on this GitHub but It will still be updated and maintained.
+
+Who knows, may have some way cooler code/tools to show in the future.
+
+- Gh05t5h311
