@@ -6,7 +6,7 @@ So this week I have refactored some of the code base for a few things:
 
 https://github.com/ZeroDayGang-gh05t5h311/Security_Demo_Web_App
 
-All but the cpp file(don't have the required library's for SQL on this box though that was my first choice for back-end)
+All but the cpp file(don't have the required library's for SQL on this box though that was my first choice for back-end).
 
 Fixed and improved this in various ways:
 
@@ -61,10 +61,11 @@ Run airodump-ng to get a list of target AP's!
 
 Find and AP you want to attack(don't worry if wps is not enabled)
 
-Get the mac address of the router and start de-authing it...(any tool's that have this functionality can be use 
-for it this is just what I recommend). Then with the right timing run the reaver attack against the target AP...NOTE:
-Timing is everything to this attack and some vendor's have patched it(or at least the ability to de-auth them(thus 
-stopping part of the attack.))What it should do if the timing is correct is give you either the WPA2 password in plaintext...
+Get the mac address of the router and start de-authing it...(any tool's that have this functionality can be use for it this is just what I recommend). Then with the right timing run the reaver attack against the target AP...
+
+NOTE: Timing is everything to this attack and some vendor's have patched it(or at least the ability to de-auth them(thus stopping part of the attack.))
+
+What it should do if the timing is correct is give you either the WPA2 password in plaintext...
 or the wps password(even if it's not enabled), and then you can use either to connect to the target AP.
 
 Also should note that this is not a new attack: I found this back in 2015 when I was a pure script kiddie...
@@ -94,13 +95,17 @@ https://github.com/ZeroDayGang-gh05t5h311/Scanners/blob/main/BanScan.cpp
 
 Had a bit of fun playing with all 3 a bit today and may have more to do but sadly for most of the code hosted: it 
 will basically be left by the wayside as I move forward.
+
 Oh and just for the fun of it I thought I would doxx myself and show you a cheeky logic bug that led to a 
 full account takeover. so check that out on my X account... will be linked to a video from my old profile... 
+
 that was fun to look over aha. Anyway: look forward to the future: enjoy!
 
 - gh05t5h311
 
+
 [01/02/26]
+
 
 So it's been a little while: lot's of fun/interesting changes in my personal life, been really
 enjoying what I've been working on lately: mostly lot's of studying for future skills/exams; plus 
@@ -145,11 +150,25 @@ https://github.com/ZeroDayGang-gh05t5h311/SearchAbuse/blob/main/SES.go(save%20as
 had written a python version of it (co-authored) that was pretty bad and relied upon some
 just horrible packages to run.... but It got me thinking if there was a language better suited to 
 the software I was trying to make. And turns out Golang is a great solution(hence why I ported sila to it).
-
 Not that the packages where horrible as with the problems I had with the python version of SES but still 
-Goolang seemed and has been a great choice: few more tools I may port to it but defiantly got to get
+Goolang seemed and has been a great choice: few more tools I may port to it but definitely got to get
 a bit more of security based focus, and may take away a bit from what I do on this GitHub but It will still be updated and maintained.
 
 Who knows, may have some way cooler code/tools to show in the future.
-
 - Gh05t5h311
+
+[09/02/2026]
+
+Hello again... thank-you all kindly for the support from the community: last week, have just had allot going on IRL and have been doing some skill's development. Mostly in shell scripting and the command line but have also been doing some personal development that ultimately will ensure a wise and more meaningful existence for myself(albeit a bit lonely at first). As well as failing to make SES.go work as intended(with .py being abandoned and left where it is).
+
+So sorry to everyone that was hoping for more... did fix a few runtime issues in this:
+
+https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/Addison.py
+
+And this:
+
+https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/Charli_0.8.1.cpp
+
+All in all it has mostly just been a week of working not so publicly but in all fairness this(plus other time I take to do that) will only benefit the quality of my work which to be honest I feel is sub-standard and that's all there is too it. So sorry for the shoddy work, I will do better! Side note: have also been writing some paper's as well that are just simply not ready for the pubic yet. I would keep a real close eye on my work from March and beyond as that's when things do seem to be really taking off, thank-you so kindly to all that have supported me and encouraged me into this community(IRL and on the internet). It honestly means the world to me and while I need no encouragement to play with computers: taking it in a more professional direction really has been fueled by the support of the community.  
+
+Likely going to be really focusing on skills development the next few weeks but will have a few things to update here and there.  
