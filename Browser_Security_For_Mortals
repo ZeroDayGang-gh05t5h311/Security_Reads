@@ -1,7 +1,4 @@
-Hi, my name is gh05t5h311 (if you know, you know). I’ve been a big fan of computer security and tech for years, 
-not professionally, just as a hobbyist who loves understanding how things work and sometimes how they break. 
-Security is a luxury most people don’t have the time or background to study deeply, so this write-up exists to help normal users understand 
-the modern browser security landscape without drowning in jargon. 
+Hi, my name is gh05t5h311 (if you know, you know). I’ve been a big fan of computer security and tech for years, not professionally, just as a hobbyist who loves understanding how things work and sometimes how they break. Security is a luxury most people don’t have the time or background to study deeply, so this write-up exists to help normal users understand the modern browser security landscape without drowning in jargon.
 
 This is web security defense: for mere mortals.
 
@@ -82,7 +79,7 @@ browser_exploitation_timeline:
     sources: [microsoft_2018, google_release_notes_2018]
   - year: 2018
     case: "Spectre & Meltdown Browser Exploitation"
-    attack_vector: "JavaScript-based microarchitectural leakage"
+    attack_vector: "JavaScript-based micro-architectural leakage"
     impact: "All major browsers forced into emergency redesign"
     category: "Side-channel attack"
     sources: [google_project_zero_2018, meltdown_paper_2018]
@@ -117,22 +114,51 @@ Total     290,406,670           100%
 KEY TAKEAWAYS FOR MERE MORTALS: 
 
 Browsers are now full operating systems and deserve the same caution as any critical application.
-JavaScript engines are incredibly complex and can become powerful attack surfaces. Browser extensions are the new Trojan horses, 
-and users should install very few of them. Automatic updates are essential for security but also a potential attack vector. 
-Modern attacks are often completely invisible. Good security hygiene still matters: unique random passwords,
-minimal extensions, staying updated, and being mindful of which companies you trust with your data. Most importantly, 
-attackers and companies can only misuse the data you choose to provide. Separating your online identity from your real one limits what can be taken from you. 
-_____________________________________________________________________________________________________________________
+JavaScript engines are incredibly complex and can become powerful attack surfaces. Browser extensions are the new Trojan horses, and users should install 
+very few of them. Automatic updates are essential for security but also a potential attack vector. Modern attacks are often completely invisible. 
+Good security hygiene still matters: unique random passwords, minimal extensions, staying updated, and being mindful of which companies you trust with 
+your data. Most importantly, attackers and companies can only misuse the data you choose to provide. 
+Separating your online identity from your real one limits what can be taken from you. 
+
 UPDATE(05/02/25):
 
-So this was just a very short write-up I really hope it has helped at least one person better understand how to take steps to do your best to stay safe online. 
-Now it's time(in a short time) to write about some vulnerabilities that I myself, have found: personally I'm not much of a writer at all;
-so It's never really something that one leaned into thus far.in my programming/computer science experience. So short bit of information: had been seeing an 
-reading allot about why  I don't do more research publicly: well to be honest I was not really working very much with computers last year
-(it is just a hobby for me), plus mostly my focus was on programming/software development. Just another dagger to keep sharp; so to speak, 
-a great reason for not talking/writing about certain bugs is that even if they have been "patched"; someone may find a way around that patch 
-and that's kinda not cool to be exposing that when the point of reporting bugs(other than getting payed) is to help secure technology. 
-That being said however there are some things that I would like to share in the future as it is kinda odd that one of the top members of 
-the Zero-Day-Gang does not write about 0days. They post code; my apologizes for being a let down in the past: here I am; let's do this.
+So this was just a very short write-up I really hope it has helped at least one person better understand how to take steps to do your best to stay safe online.
+Now it's time(in a short time) to write about some vulnerabilities that I myself, have found: personally I'm not much of a writer at all so It's never really 
+something I leaned into thus far in my programming/computer science experience. So short bit of information: had been seeing an reading allot about why I don't 
+do more research publicly: well to be honest I was not really working very much with computers last year(it is just a hobby for me), plus mostly my focus was on 
+programming/software development. Just another dagger to keep sharp; so to speak, a great reason for not talking/writing about certain bugs is that even if they 
+have been "patched"; someone may find a way around that patch and that's kinda not cool to be exposing that when the point of reporting bugs(other than getting payed) 
+is to help secure technology. That being said however there are some things that I would like to share in the future as it is kinda odd that one of 
+the top members of the Zero-Day-Gang does not write about 0days. 
+They post code; my apologizes for being a let down in the past: here I am; let's do this.
 
-Have a great deal to sort out at the moment but I will revisit it by the end of the month and add more to it.
+UPDATE(14/02/2025):
+
+Hello. So it has been some time since I have updated this: and now seems the right time with resent revelations(yes those ones) to give a little more light to this subject from my perspective. 
+Specifically about browsers and the role of keeping anonymous online (should you wish too) in 2026. Firstly the "should you wish too" explained: 
+there are benefit's to being semi-anonymous on the internet and that is great, people don't know whom you are: odd stalker's can't find you as easily. 
+Which in today's world where there are A.I tool's that can find you on a map from a simple picture(search engine it), within seconds. That has implications 
+that can be a great deal more depending on the context of your security model/needs. And that is mostly the point I'm trying to make is that is is about your 
+threat model.
+
+OK yes undoubtedly there are some benefit's to not putting your entire life online, you can just avoid it: but do you want to?
+that's the question everyone has to ask themselves but it is hard to answer without some knowledge of how it works. Sure it's easy to do 
+the whole pseudo anonymous thing to a degree(use a VPN, never post personally indefinable pictures, strip said pictures of metadata and 
+use an animated picture or something of a kind). But what about platforms like "X"?  You need a credit card or some payment system to be verified. 
+So even if I strip my pictures of meta data so you can't get the GPS location of where some picture was taken and it has no landmarks in it 
+so you can't use A.I tools so easily: the person that owns X still clearly knows whom you or I am; furthermore am I limiting myself by doing that? 
+Or do i just not care about that at all? Really it is down to the individual to do that otherwise why be on social media at all right? It does seem that 
+most people just don't care about that because more click's on their Facebook page, Instagram, X, snapchat, that's currency in today's world. 
+The more time people spend looking at my stuff rather than focusing on their own then that's better for me(or you), right?
+
+Well that honestly and really depends what you like and level of a bridge between the real world and your online self you would like, 
+most people in tech know this: it's the non-tech people that don't necessarily understand that: though it is a great deal better than it was 
+10 year's ago. But back to a point I made earlier: if you or I have a monetary relationship with sites then that is not anonymous anymore and the 
+only way to truly be is to just not use it. Personally I love X and the little interactions I have on there with people so Likely we be less "anonymous" 
+over time as things roll out and I go deeper into the tech world, but the key point's are to clean your browser as often as is not to much of a inconvenience. 
+Automating that process helps by just having the browser do it for you: plus there are new browsers like "brave" that while they have a small amount of the 
+market are actually very good at helping you do this in a simple way. Mostly it is important to think about your needs as a user: be you technically 
+astute with computers or not and then develop healthy habits for not just your browser: but all web activity. 
+
+More to come on this in time(say the end of the month(with actual research details included))
+- gh05t5h311
