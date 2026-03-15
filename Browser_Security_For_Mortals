@@ -133,4 +133,221 @@ More to come on this in time(say the end of next month(with actual research deta
 
 - gh05t5h311 
 
-Update: My sincerest of apologies for what should have been updated sooner but I miss-typed that last part like an LLM brain farting, It's the end of next month I meant to type)(so basic the end of this one if you look at the dates).
+Update: My sincerest of apologies for what should have been updated sooner but I miss-typed that last part like an LLM brain farting, It's the end of next month I meant to type)(so basically the end of this one if you look at the dates).
+
+
+Hello again mortals, a summary of so far:
+
+Some things that may help with this are no-script: https://noscript.net 
+
+Sorry I know it's a hard sell to mere mortals but it really will help protect you from allot of these kinds of things, there is also a light version of it too that's a bit more user friendly but still not at easy for technical people.
+
+Just generally having a good password very random password like "x829u8Qin8d!" and making sure to not re-use passwords.
+
+But the number one thing that will help save you as a user is just general common sense when It comes to making informed choices about the company's that you give your data too... you can't steal the data of a person whom did not give real data that could be tied from their online life to their real one. That information is only valuable to hackers/company's so much as they can use it.
+
+
+Now for some actual research....
+
+
+
+                                            Full-Stack Web Architecture & Security Overview
+                                                (Rest, CRUD, ACID, XSS, SQL Injection)
+
+Key Elements:
+- Client / Browser
+- REST API Layer
+- CRUD Layer
+- Database Layer (ACID)
+- Security risks: XSS & SQL Injection
+
+Client / Browser
+  - Sends HTTP requests to REST API
+  - User input may be malicious (XSS / SQLi)
+  
+REST API Layer
+  - Maps HTTP verbs to CRUD operations
+    POST -> CREATE
+    GET  -> READ
+    PUT  -> UPDATE
+    DELETE -> DELETE
+  - Processes requests, handles authentication
+  - Outputs responses to client
+  - Security: must sanitize user input, enforce CSP, escape output
+CRUD Layer
+  - Executes operations on the database
+  - Uses parameterized queries to prevent SQL Injection
+Database Layer (ACID)
+  - Ensures transactions are Atomic, Consistent, Isolated, Durable
+  - Stores application data
+  - Malicious input here can lead to stored XSS if output is not sanitized
+Security Vulnerabilities:
+  - XSS: Malicious scripts executed in browser via unsafe output
+  - SQL Injection: Malicious input manipulates database queries
+  - Combined: SQLi can insert XSS payloads into DB, affecting many users
+This diagram shows how:
+- REST APIs expose CRUD operations
+- CRUD operations interact with databases under ACID guarantees
+- Security vulnerabilities like XSS and SQLi can affect users
+  and data integrity
+============================================================
+        Full-Stack Flow: REST / CRUD / ACID / XSS / SQLi
+============================================================
+                 Client / Browser
+                        |
+                        | User input / HTTP requests
+                        v
+          ---------------------------------
+          |          REST API Layer       |
+          ---------------------------------
+          | Maps HTTP verbs to CRUD       |
+          | - POST -> CREATE              |
+          | - GET -> READ                 |
+          | - PUT/PATCH -> UPDATE         |
+          | - DELETE -> DELETE            |
+          | Security: sanitize, escape    |
+          ---------------------------------
+                        |
+                        | CRUD Operations
+                        v
+          ---------------------------------
+          |           CRUD Layer          |
+          ---------------------------------
+          | Executes SQL queries          |
+          | Uses parameterized queries    |
+          | Security: prevents SQLi       |
+          ---------------------------------
+                        |
+                        | Transaction (ACID)
+                        v
+          ---------------------------------
+          |         Database Layer        |
+          ---------------------------------
+          | ACID Properties:              |
+          | - Atomicity                   |
+          | - Consistency                 |
+          | - Isolation                   |
+          | - Durability                  |
+          | Security risk: stored XSS     |
+          ---------------------------------
+                        |
+                        v
+                 Response to Client
+                        |
+                        v
+       ----------------------------------------
+       | Security Vulnerabilities in Browser |
+       ----------------------------------------
+       | XSS executes scripts in user's DOM |
+       | - Steal cookies / session tokens   |
+       | - DOM manipulation / phishing      |
+       | - Keylogging                       |
+       | SQLi may have led to unsafe data   |
+       | reflected to user                  |
+       ----------------------------------------
+Notes:
+- Always sanitize and validate input at API layer
+- Escape and encode output to prevent XSS
+- Use prepared statements to prevent SQL Injection
+- Apply Content Security Policy (CSP) to reduce script execution risks
+- ACID ensures database remains consistent even under concurrent operations
+============================================================
+       FULL-STACK WEB ARCHITECTURE & SECURITY MAP
+       REST | CRUD | ACID | XSS | SQL Injection
+============================================================
+
+           +---------------------------+
+           |       Client / Browser    |
+           |---------------------------|
+           | - Sends HTTP requests     |
+           | - User input: forms, URL |
+           | - Target of XSS attacks  |
+           +-------------+-------------+
+                         |
+                         | HTTP Request (REST)
+                         v
+           +---------------------------+
+           |        REST API Layer     |
+           |---------------------------|
+           | - Maps HTTP verbs to CRUD |
+           |   POST -> CREATE          |
+           |   GET  -> READ            |
+           |   PUT  -> UPDATE          |
+           |   PATCH -> UPDATE(partial)|
+           |   DELETE -> DELETE        |
+           | - Sanitizes input         |
+           | - Escapes output          |
+           +-------------+-------------+
+                         |
+                         | Executes CRUD operations
+                         v
+           +---------------------------+
+           |        CRUD Layer         |
+           |---------------------------|
+           | - CREATE, READ, UPDATE,  |
+           |   DELETE                  |
+           | - Uses parameterized SQL  |
+           | - Prevents SQL Injection  |
+           +-------------+-------------+
+                         |
+                         | Transactions (ACID)
+                         v
+           +---------------------------+
+           |      Database Layer       |
+           |---------------------------|
+           | - ACID Properties:        |
+           |   * Atomicity             |
+           |   * Consistency           |
+           |   * Isolation             |
+           |   * Durability            |
+           | - Stores data securely    |
+           | - Vulnerable to stored XSS|
+           +-------------+-------------+
+                         |
+                         v
+           +---------------------------+
+           |   Browser / Response      |
+           |---------------------------|
+           | - Executes scripts (XSS)  |
+           | - Receives data possibly  |
+           |   from SQLi-exploited DB  |
+           | - Risk: session hijacking |
+           |   cookie theft, DOM hacks |
+           +---------------------------+
+
+KEY SECURITY TOUCHPOINTS:
+- REST API: sanitize input, escape output
+- CRUD: use prepared statements / parameterized queries
+- Database: ACID ensures consistency, but stored XSS is possible
+- Browser: XSS executes in DOM; SQLi can leak data for attacks
+- Mitigation: CSP, input validation, least privilege, output encoding
+
+ FULL-STACK WEB ARCHITECTURE & SECURITY CHEAT SHEET
+ REST | CRUD | ACID | XSS | SQL Injection
+
+          MINI-LEGEND: VULNERABILITIES & MITIGATION
+------------------------------------------------------------
+Layer                Vulnerabilities              Protections
+------------------------------------------------------------
+Client / Browser     XSS (script execution)      Use CSP, sanitize DOM, escape output
+REST API Layer       SQLi (via input)           Validate input, escape output, rate-limit
+                     Reflected XSS               Encode output, CSP
+CRUD Layer           SQL Injection               Parameterized queries / prepared statements
+Database Layer       Stored XSS                  Escape output when rendering, limit DB privileges
+                     Data leakage via SQLi       Least privilege, audit logs, backup
+Browser / Response   Session hijack / cookies    HttpOnly cookies, secure flags, CSP
+                     DOM manipulation            Escape user content
+Quick Tips:
+- Always assume user input is malicious
+- Combine input validation + output encoding
+- Limit privileges on DB accounts used by your application
+- Use ACID-compliant transactions to ensure consistency
+- Implement CSP to reduce XSS impact
+
+References(sources):
+1. https://owasp.org/www-community/attacks/xss/
+2. https://owasp.org/www-community/attacks/SQL_Injection
+3. https://restfulapi.net/
+4. https://www.geeksforgeeks.org/crud-operations-in-database/
+5. https://www.ibm.com/docs/en/db2/11.5?topic=transactions-acid-properties
+
