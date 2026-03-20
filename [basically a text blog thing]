@@ -148,8 +148,8 @@ Speaking of go this is the reason I got into it:
 https://github.com/ZeroDayGang-gh05t5h311/SearchAbuse/blob/main/SES.go(save%20as%20main.go)
 
 had written a python version of it (co-authored) that was pretty bad and relied upon some
-just horrible packages to run.... but It got me thinking if there was a language better suited to 
-the software I was trying to make. And turns out Golang is a great solution(hence why I ported sila to it).
+just horrible packages to run.... but it got me thinking if there was a language better suited to 
+the software I was trying to make. And as it turns out Golang is a great solution(hence why I ported sila to it).
 Not that the packages where horrible as with the problems I had with the python version of SES but still 
 Goolang seemed and has been a great choice: few more tools I may port to it but definitely got to get
 a bit more of security based focus, and may take away a bit from what I do on this GitHub but It will still be updated and maintained.
@@ -171,4 +171,20 @@ https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/Charli_0.8.1.cp
 
 All in all it has mostly just been a week of working not so publicly but in all fairness this(plus other time I take to do that) will only benefit the quality of my work which to be honest I feel is sub-standard and that's all there is too it. So sorry for the shoddy work, I will do better! Side note: have also been writing some paper's as well that are just simply not ready for the pubic yet. I would keep a real close eye on my work from March and beyond as that's when things do seem to be really taking off, thank-you so kindly to all that have supported me and encouraged me into this community(IRL and on the internet). It honestly means the world to me and while I need no encouragement to play with computers: taking it in a more professional direction really has been fueled by the support of the community.  
 
-Likely going to be really focusing on skills development the next few weeks but will have a few things to update here and there.  
+Likely going to be really focusing on skills development the next few weeks but will have a few things to update here and there. 
+
+- gh05t5h311
+
+
+[20/03/2026]
+
+So the last few week's as been very much based on skill's development and task's IRL. Going through some old hardware and learning what I can. May have seen a few things I've updated to in the past few weeks(Addison,sila,Charli). It's been really fun being able to do that along side learning. Must admit that I've put to much time into some of that(mostly out of just putting things off). But it's been a fun process overall in a "return to security"). It's been a long quest to decide that this is what one want's to do with their life, but there is no other community that I want to be a part of more than the hacker/tech one(perhaps with a little cross-over with the gamer one in time).
+
+Big problem I've had lately(though it is a good one to have): is that of where to focus my efforts. A great deal of us have gone through this so not going to pretend it's just me: you start to gain a very minor amount of traction(however ever much it is appreciated). But in your heart of hearts you know there is a great deal more to be done and you're just enjoying all of it. Focusing efforts into things.
+
+I've kind of got it down to making this GitHub more Pro quality in terms of looks and feel(but especially in terms of code and security reporting), and also looking to be more on the bug bounty side of things as while I have fun playing developer: I'm clearly not one; however it is something that is enjoyable in any case and feel has honestly only made me step my skills up over all(albeit a very humbling experience).
+
+Hope all is well in the world with anyone reading this: also those that are not. Many thanks and regards,
+
+- gh05t5h311
+
