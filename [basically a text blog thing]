@@ -181,7 +181,7 @@ Likely going to be really focusing on skills development the next few weeks but 
 
 [20/03/2026]
 
-So the last few week's as been very much based on skill's development and task's IRL. Going through some old hardware and learning what I can. May have seen a few things I've updated to in the past few weeks(Addison,sila,Charli). It's been really fun being able to do that along side learning. Must admit that I've put to much time into some of that(mostly out of just putting things off). But it's been a fun process overall in a "return to security"). It's been a long quest to decide that this is what one want's to do with their life, but there is no other community that I want to be a part of more than the hacker/tech one(perhaps with a little cross-over with the gamer one in time).
+So the last few week's as been very much based on skill's development and task's IRL. Going through some old hardware and learning what I can. May have seen a few things I've updated in the past few weeks(Addison,sila,Charli). It's been really fun being able to do that along side learning. Must admit that I've put to much time into some of that(mostly out of just putting things off). But it's been a fun process overall in a "return to security"). It's been a long quest to decide that this is what one want's to do with their life, but there is no other community that I want to be a part of more than the hacker/tech one(perhaps with a little cross-over with the gamer one in time).
 
 Big problem I've had lately(though it is a good one to have): is that of where to focus my efforts. A great deal of us have gone through this so not going to pretend it's just me: you start to gain a very minor amount of traction(however ever much it is appreciated). But in your heart of hearts you know there is a great deal more to be done and you're just enjoying all of it. Focusing efforts into things.
 
@@ -190,3 +190,15 @@ I've kind of got it down to making this GitHub more Pro quality in terms of look
 Hope all is well in the world with anyone reading this: also those that are not. Many thanks and regards,
 
 - gh05t5h311
+
+
+ [01/04/2026]:
+
+ Hello all: sorry things are likely to be a little delayed in cleaning this GitHub up: happy to report lifestyle is cleaning up and I'm loving that. It's been a long road to take ownership of my shortcomings: and an even longer one to even start to make amends. If you have hated/loved or really anything: would like to thank-you: please don't get me wrong I don't care so much for noise without signal: but in today world; not always so bad when people see your potential and encourage you to do good.
+
+
+Sorry things have been so slow on the GitHub front: been doing some research into xss(cross-site scripting) and getting some interesting results. Started on Sunday night just taking a look at modern standards of web security(where applicable). Especially CSP; it has been very interesting to learn and get involved, writing custom scripts and things to help too. Really enjoying it so far and can't wait to see what I can find and report. May have a few updates here and there for you all along the way, so sorry that I took cves off and I'm so not sharing the latest scripts just yet because you all know how back-stabbing most humans are these days so I just refuse to shoot myself in the foot on that one and will keep things to myself until I've moved onto other projects. Sorry that's so lame and not in the spirit of pure open source but honestly think its the best move so as to not make life harder for myself.  Hope all is well with you and yours.
+
+- gh05t5h311
+
+
