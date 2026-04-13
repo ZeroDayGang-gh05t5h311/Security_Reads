@@ -240,7 +240,7 @@ Not much to report made this cool little script:
 
 https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/H3tic_report.py
 
-Mostly been working with a private tool not fit for the public to help with XSS research and really focusing my efforts into 
+Mostly been working with a private tool (not fit for the public just yet), to help with XSS research and really focusing my efforts into 
 bug bounty's there, the command line and C code (plus a little Java as I want to really refactor Laurie.java to be more meaningful).
 
 - gh05t5h311
