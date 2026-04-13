@@ -1,0 +1,117 @@
+
+Security Journal — gh05t5h311
+Focus: Offensive security, tooling, and progression toward professional bug bounty work
+
+---
+
+[09/01/2026]
+
+“Hello Friend” — a bit cliché, but still not as distracting as some of the inaccuracies in certain hacker shows that make them hard to sit through.
+
+At its most basic level, computer security is about ensuring that systems and software are only accessed by authorized users. That idea has been sitting at the core of everything I’ve been working on, even on quieter days like today where real-life commitments took priority.
+
+Alongside the technical side, there’s also been a personal shift. I’ve been focusing on becoming more disciplined, cutting out habits that don’t help, and trying to move away from who I was toward who I want to be. It’s not instant, but it feels like a worthwhile process.
+
+On the development side, I spent time refactoring parts of the Security_Demo_Web_App, excluding the C++ backend for now due to missing SQL libraries on this machine. I also revisited several utilities, improving the Python version of PortPeep, creating a PowerShell version which still needs testing, and building a C++ version as well. SysNyAdminEnny.cpp and Sila.cpp both received updates, with general improvements in structure and usability.
+
+Overall, nothing major in terms of output today, but solid groundwork for what comes next.
+
+---
+
+[16/01/2026]
+
+This week has been more focused on refining existing tools and laying the groundwork for future CVE-related work.
+
+Addison.py has been reworked into a modular structure, which should make it far more maintainable and flexible moving forward. Alongside that, the shell version of PortPeep has been improved. While the shell script is neat in its own way, the Python and C++ implementations remain more practical for most use cases.
+
+I’ve also been revisiting older security concepts from a purely educational standpoint. Historically, certain attack techniques involving deauthentication and WPS exploitation were effective against poorly configured networks. These approaches relied heavily on timing and specific device behavior, and while they were once widely applicable, modern hardware and firmware have significantly improved in how they respond to such conditions.
+
+Anything in that space today should be approached strictly within controlled and legal environments, such as personal lab setups, as the landscape has changed considerably over time.
+
+---
+
+[19/01/2026]
+
+This past week was intentionally lighter in terms of public output. The main reason for that is a gradual shift in direction toward more practical security work, particularly bug bounty programs.
+
+Before fully moving on, I wanted to bring parts of the existing codebase up to a better standard. CVES.cpp is now functioning reliably, and the same can be said for CVES(POC).py and BanScan.cpp. Spending some time testing and refining these was useful, both from a stability perspective and as a reminder of how much small improvements matter in practice.
+
+Going forward, a larger portion of my work will likely remain private as I focus more seriously on professional development. That said, I’m not interested in abandoning what’s already here, so maintenance and occasional updates will continue.
+
+---
+
+[01/02/2026]
+
+The past couple of weeks have been a mix of personal changes, skill development, and experimentation with different approaches to tooling.
+
+The Security_Demo_Web_App has been cleaned up and is now more functional, although still not where I ultimately want it to be. Both cmdinjscan.py and its C++ counterpart are improving, but they still lack the level of reliability I’m aiming for, which will require further work behind the scenes.
+
+Charli continues to evolve gradually, and Sila has turned into a particularly interesting project. The banner scanner works well in C++, and I’ve also built a Go version, which has been a useful exercise.
+
+Go itself has become a point of interest. After earlier frustrations with Python dependencies in another project, it became clear that Go offers a cleaner and more reliable environment for certain types of tools. That realization led to porting some functionality over and will likely influence future development choices.
+
+There’s a noticeable shift happening toward more security-focused work, even if that means fewer public updates for a while.
+
+---
+
+[09/02/2026]
+
+This week has been more about improving fundamentals than producing visible output.
+
+Most of the time has gone into working with the command line, refining shell scripting skills, and addressing gaps in understanding that would otherwise limit progress later. Addison.py and Charli_0.8.1.cpp both received runtime fixes and small improvements, but the main value came from the learning process rather than the updates themselves.
+
+Some work is being kept private for now with the intention of raising the overall standard before sharing anything further. The goal is not just to produce more, but to produce better.
+
+---
+
+[20/03/2026]
+
+Recent weeks have been split between hands-on learning, working with older hardware, and continuing to refine existing tools.
+
+There has been steady progress on Addison, Sila, and Charli, although at times I’ve probably spent longer than necessary on certain areas. That said, the process has been enjoyable and useful as part of returning to a more security-focused mindset.
+
+One of the main challenges at the moment is deciding where to concentrate effort. There are two clear directions: continuing to improve this GitHub to a more professional standard, or focusing more heavily on bug bounty work. Development has been a valuable part of the journey, but it’s becoming clear that security research is where I want to place more emphasis going forward.
+
+---
+
+[01/04/2026]
+
+Work recently has been centred around XSS research and modern web security practices, particularly Content Security Policy.
+
+This has involved studying current standards, testing different scenarios, and writing custom scripts to support the process. It’s been engaging and has opened up several areas worth exploring further.
+
+For now, some of the tooling being developed will remain private. The intention is to avoid creating unnecessary obstacles while actively working on potential findings. Public contributions will continue, but more selectively.
+
+---
+
+[08/04/2026]
+
+Progress has slowed due to personal circumstances, as a close family member has become seriously ill.
+
+Time has been spent focusing on being present and making the most of that, while still keeping some level of continuity with ongoing work where possible. Situations like this tend to shift perspective quite quickly.
+
+One thought that stands out is the idea of not letting negative experiences change who you are at your core. It’s simple, but it carries weight.
+
+Work will continue, but at a reduced pace for the time being.
+
+---
+
+[09/04/2026]
+
+Following on from the previous entry, I want to address the tone of what I wrote. Frustration got the better of me, and while the underlying point about boundaries still stands, the way it was expressed could have been handled better.
+
+At the moment, the focus is shifting more clearly toward professional goals. That includes bug bounty work, certifications, and finding a stable administrative role to support that direction.
+
+As a result, public output may become less frequent, but that’s a trade-off in favour of long-term progress. The intention is still to return to consistent updates when the balance allows for it.
+
+---
+
+[12/04/2026]
+
+Recent work has been focused on XSS research and the development of supporting tools.
+
+A small reporting script, H3tic_report.py, was created to help organize findings more efficiently. Alongside that, most of the effort has gone into a private tool that is not yet ready for release, but is already proving useful in streamlining parts of the workflow.
+
+There is a continued emphasis on understanding CSP behaviour and refining approaches to identifying and testing XSS vectors.
+
+For now, some of this work will remain internal until it reaches a point where sharing it makes sense. The overall direction remains the same: building toward effective and consistent bug bounty work.
