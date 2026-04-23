@@ -1,8 +1,7 @@
-
 Security Journal — gh05t5h311
-Focus: Offensive security, tooling, and progression toward professional bug bounty work
 
----
+Focus: Offensive/Defensive Security, Mostly interested in tooling(attack and defense),Network Security and specifically vulnerability analysis.
+
 
 [09/01/2026]
 
@@ -16,7 +15,6 @@ On the development side, I spent time refactoring parts of the Security_Demo_Web
 
 Overall, nothing major in terms of output today, but solid groundwork for what comes next.
 
----
 
 [16/01/2026]
 
@@ -24,21 +22,19 @@ This week has been more focused on refining existing tools and laying the ground
 
 Addison.py has been reworked into a modular structure, which should make it far more maintainable and flexible moving forward. Alongside that, the shell version of PortPeep has been improved. While the shell script is neat in its own way, the Python and C++ implementations remain more practical for most use cases.
 
-I’ve also been revisiting older security concepts from a purely educational standpoint. Historically, certain attack techniques involving deauthentication and WPS exploitation were effective against poorly configured networks. These approaches relied heavily on timing and specific device behavior, and while they were once widely applicable, modern hardware and firmware have significantly improved in how they respond to such conditions.
+I’ve also been revisiting older security concepts from a purely educational standpoint. Historically, certain attack techniques involving de-authentication and WPS exploitation were effective against poorly configured networks. These approaches relied heavily on timing and specific device behavior, and while they were once widely applicable, modern hardware and firmware have significantly improved in how they respond to such conditions.
 
 Anything in that space today should be approached strictly within controlled and legal environments, such as personal lab setups, as the landscape has changed considerably over time.
 
----
 
 [19/01/2026]
 
 This past week was intentionally lighter in terms of public output. The main reason for that is a gradual shift in direction toward more practical security work, particularly bug bounty programs.
 
-Before fully moving on, I wanted to bring parts of the existing codebase up to a better standard. CVES.cpp is now functioning reliably, and the same can be said for CVES(POC).py and BanScan.cpp. Spending some time testing and refining these was useful, both from a stability perspective and as a reminder of how much small improvements matter in practice.
+Before fully moving on, I wanted to bring parts of the existing code base up to a better standard. CVES.cpp is now functioning reliably, and the same can be said for CVES(POC).py and BanScan.cpp. Spending some time testing and refining these was useful, both from a stability perspective and as a reminder of how much small improvements matter in practice.
 
 Going forward, a larger portion of my work will likely remain private as I focus more seriously on professional development. That said, I’m not interested in abandoning what’s already here, so maintenance and occasional updates will continue.
 
----
 
 [01/02/2026]
 
@@ -52,7 +48,6 @@ Go itself has become a point of interest. After earlier frustrations with Python
 
 There’s a noticeable shift happening toward more security-focused work, even if that means fewer public updates for a while.
 
----
 
 [09/02/2026]
 
@@ -62,7 +57,6 @@ Most of the time has gone into working with the command line, refining shell scr
 
 Some work is being kept private for now with the intention of raising the overall standard before sharing anything further. The goal is not just to produce more, but to produce better.
 
----
 
 [20/03/2026]
 
@@ -72,17 +66,16 @@ There has been steady progress on Addison, Sila, and Charli, although at times I
 
 One of the main challenges at the moment is deciding where to concentrate effort. There are two clear directions: continuing to improve this GitHub to a more professional standard, or focusing more heavily on bug bounty work. Development has been a valuable part of the journey, but it’s becoming clear that security research is where I want to place more emphasis going forward.
 
----
 
 [01/04/2026]
 
-Work recently has been centred around XSS research and modern web security practices, particularly Content Security Policy.
+Work recently has been centered around XSS research and modern web security practices, particularly Content Security Policy.
 
 This has involved studying current standards, testing different scenarios, and writing custom scripts to support the process. It’s been engaging and has opened up several areas worth exploring further.
 
 For now, some of the tooling being developed will remain private. The intention is to avoid creating unnecessary obstacles while actively working on potential findings. Public contributions will continue, but more selectively.
 
----
+
 
 [08/04/2026]
 
@@ -94,7 +87,7 @@ One thought that stands out is the idea of not letting negative experiences chan
 
 Work will continue, but at a reduced pace for the time being.
 
----
+
 
 [09/04/2026]
 
@@ -102,9 +95,9 @@ Following on from the previous entry, I want to address the tone of what I wrote
 
 At the moment, the focus is shifting more clearly toward professional goals. That includes bug bounty work, certifications, and finding a stable administrative role to support that direction.
 
-As a result, public output may become less frequent, but that’s a trade-off in favour of long-term progress. The intention is still to return to consistent updates when the balance allows for it.
+As a result, public output may become less frequent, but that’s a trade-off in favor of long-term progress. The intention is still to return to consistent updates when the balance allows for it.
 
----
+
 
 [12/04/2026]
 
@@ -112,6 +105,19 @@ Recent work has been focused on XSS research and the development of supporting t
 
 A small reporting script, H3tic_report.py, was created to help organize findings more efficiently. Alongside that, most of the effort has gone into a private tool that is not yet ready for release, but is already proving useful in streamlining parts of the workflow.
 
-There is a continued emphasis on understanding CSP behaviour and refining approaches to identifying and testing XSS vectors.
+There is a continued emphasis on understanding CSP behavior and refining approaches to identifying and testing XSS vectors.
 
 For now, some of this work will remain internal until it reaches a point where sharing it makes sense. The overall direction remains the same: building toward effective and consistent bug bounty work.
+
+
+[23/04/2026]
+
+Hello Reader:
+
+Really happy with the response(on the whole) to h3ctic_report.py, thank-you kindly. It's been a fun time just looking at the web again(and seeing how much it has changed in the last decade especially(and area's where it's all too much the same for my taste)). Have found a few interesting things but nothing I can talk about publicly yet.Sorry the tool development publicly has taken a backseat but with all I'm doing it that was time management issue I'm standing by for a while.
+
+Don't get me wrong I will be updating this GitHub where I can but realistically this is just kind of a side thing I'm doing to have a thing to do so show the community all the things that I'm willing to share with the community: so basically just don't want to be delusional and things that the minor traction(how ever much i appreciate it), is simply enough of a foundation for an entire career so to speak(however much I do enjoy it). Have updated a few things in a minor way but truth be told(without saying too much for now). I've had allot going on IRL(unexpectedly), so have not really even put as much time into bug bounty as I would have liked.
+
+But considering everything thing's may have to just work in a balance like that(of working on this git hub and bug bounty's and other things)). This is the approach I'm taking for now: with significantly more output publicly and privately. 
+
+
