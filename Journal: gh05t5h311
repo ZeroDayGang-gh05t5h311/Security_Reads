@@ -1,12 +1,7 @@
 Security Journal — gh05t5h311
-
 Focus: Offensive/Defensive Security, Mostly interested in tooling(attack and defense),Network Security and specifically vulnerability analysis.
-
-
 [09/01/2026]
-
 “Hello Friend” — a bit cliché, but still not as distracting as some of the inaccuracies in certain hacker shows that make them hard to sit through.
-
 At its most basic level, computer security is about ensuring that systems and software are only accessed by authorized users. That idea has been sitting at the core of everything I’ve been working on, even on quieter days like today where real-life commitments took priority.
 
 Alongside the technical side, there’s also been a personal shift. I’ve been focusing on becoming more disciplined, cutting out habits that don’t help, and trying to move away from who I was toward who I want to be. It’s not instant, but it feels like a worthwhile process.
@@ -14,7 +9,6 @@ Alongside the technical side, there’s also been a personal shift. I’ve been 
 On the development side, I spent time refactoring parts of the Security_Demo_Web_App, excluding the C++ backend for now due to missing SQL libraries on this machine. I also revisited several utilities, improving the Python version of PortPeep, creating a PowerShell version which still needs testing, and building a C++ version as well. SysNyAdminEnny.cpp and Sila.cpp both received updates, with general improvements in structure and usability.
 
 Overall, nothing major in terms of output today, but solid groundwork for what comes next.
-
 
 [16/01/2026]
 
@@ -109,7 +103,6 @@ There is a continued emphasis on understanding CSP behavior and refining approac
 
 For now, some of this work will remain internal until it reaches a point where sharing it makes sense. The overall direction remains the same: building toward effective and consistent bug bounty work.
 
-
 [23/04/2026]
 
 Hello Reader:
@@ -125,3 +118,11 @@ But considering everything thing's may have to just work in a balance like that(
 
 Most recently have been more focused on refining scripts and methods for bug bounty work, have managed to get much needed updates to charli and addison, have 
 got signed up to a few bug bounty sites and have been testing my tools of some of them plus other sites, did a small write up about modern security in general, refactored a few things here and there, All just work in progress at the moment; but enjoying every little nuance: day-by-day. Super exciting time just to be a part of it all in any way.
+
+[06/05/2026]:
+
+Hello again reader,
+
+Mostly been focused on the command line and C seeing as my game their is not as strong as it should be; so had to put time in(and from the results will have to put in a fair bit more) so nothing really to report publicly yet. Yes the tool that was put out yesterday was really just a show off idea that probably should have been kept to myself but hey there are better tools out there anyway to my knowledge so just wanted to share my take on xss recon, it really was meant to look at form fields more but during the creation process, felt that this should be a separate script and will be kept private; and that mapping endpoints is still very useful: thus "jsmapper.py". Sorry I'm working on quite allot to just skill up  and not so much publicly: but these few months of mostly working on fundamentals will be invaluable to the longevity of my career. Not a great deal will be happening just yet: got a cool iOS vuln to write about when I've had time to work on exploiting it more(after waiting the responsible 90 day's(unless forced to be under NDA)), and also silly 2FA bypass via logic bug to write about after 70+ day's.  
+
+That being written however: there are a fair few things that I can share with you later this week but I don't have time to do it at the moment(sorry), as real life call's and have a few thing's to take care of but will hopefully become clear at the end of the week and I'll do another entry later when I have time.
