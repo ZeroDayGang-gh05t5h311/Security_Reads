@@ -1,12 +1,13 @@
 Security Journal — gh05t5h311
 Focus: Offensive/Defensive Security, Mostly interested in tooling(attack and defense),Network Security and specifically vulnerability analysis.
+
 [09/01/2026]
+
 “Hello Friend” — a bit cliché, but still not as distracting as some of the inaccuracies in certain hacker shows that make them hard to sit through.
+
 At its most basic level, computer security is about ensuring that systems and software are only accessed by authorized users. That idea has been sitting at the core of everything I’ve been working on, even on quieter days like today where real-life commitments took priority.
-
 Alongside the technical side, there’s also been a personal shift. I’ve been focusing on becoming more disciplined, cutting out habits that don’t help, and trying to move away from who I was toward who I want to be. It’s not instant, but it feels like a worthwhile process.
-
-On the development side, I spent time refactoring parts of the Security_Demo_Web_App, excluding the C++ backend for now due to missing SQL libraries on this machine. I also revisited several utilities, improving the Python version of PortPeep, creating a PowerShell version which still needs testing, and building a C++ version as well. SysNyAdminEnny.cpp and Sila.cpp both received updates, with general improvements in structure and usability.
+On the development side, I spent time refactoring parts of the Security_Demo_Web_App, excluding the C++ back-end for now due to missing SQL libraries on this machine. I also revisited several utilities, improving the Python version of PortPeep, creating a PowerShell version which still needs testing, and building a C++ version as well. SysNyAdminEnny.cpp and Sila.cpp both received updates, with general improvements in structure and usability.
 
 Overall, nothing major in terms of output today, but solid groundwork for what comes next.
 
@@ -33,40 +34,28 @@ Going forward, a larger portion of my work will likely remain private as I focus
 [01/02/2026]
 
 The past couple of weeks have been a mix of personal changes, skill development, and experimentation with different approaches to tooling.
-
 The Security_Demo_Web_App has been cleaned up and is now more functional, although still not where I ultimately want it to be. Both cmdinjscan.py and its C++ counterpart are improving, but they still lack the level of reliability I’m aiming for, which will require further work behind the scenes.
-
-Charli continues to evolve gradually, and Sila has turned into a particularly interesting project. The banner scanner works well in C++, and I’ve also built a Go version, which has been a useful exercise.
-
-Go itself has become a point of interest. After earlier frustrations with Python dependencies in another project, it became clear that Go offers a cleaner and more reliable environment for certain types of tools. That realization led to porting some functionality over and will likely influence future development choices.
-
+Charli continues to evolve gradually, and Sila has turned into a particularly interesting project. The banner scanner works well in C++, and I’ve also built a Go version, which has been a useful exercise. Go itself has become a point of interest. After earlier frustrations with Python dependencies in another project, it became clear that Go offers a cleaner and more reliable environment for certain types of tools. That realization led to porting some functionality over and will likely influence future development choices.
 There’s a noticeable shift happening toward more security-focused work, even if that means fewer public updates for a while.
 
 
 [09/02/2026]
 
 This week has been more about improving fundamentals than producing visible output.
-
-Most of the time has gone into working with the command line, refining shell scripting skills, and addressing gaps in understanding that would otherwise limit progress later. Addison.py and Charli_0.8.1.cpp both received runtime fixes and small improvements, but the main value came from the learning process rather than the updates themselves.
-
-Some work is being kept private for now with the intention of raising the overall standard before sharing anything further. The goal is not just to produce more, but to produce better.
+Most of the time has gone into working with the command line, refining shell scripting skills, and addressing gaps in understanding that would otherwise limit progress later. Addison.py and Charli_0.8.1.cpp both received runtime fixes and small improvements, but the main value came from the learning process rather than the updates themselves. Some work is being kept private for now with the intention of raising the overall standard before sharing anything further. The goal is not just to produce more, but to produce better.
 
 
 [20/03/2026]
 
 Recent weeks have been split between hands-on learning, working with older hardware, and continuing to refine existing tools.
-
 There has been steady progress on Addison, Sila, and Charli, although at times I’ve probably spent longer than necessary on certain areas. That said, the process has been enjoyable and useful as part of returning to a more security-focused mindset.
-
 One of the main challenges at the moment is deciding where to concentrate effort. There are two clear directions: continuing to improve this GitHub to a more professional standard, or focusing more heavily on bug bounty work. Development has been a valuable part of the journey, but it’s becoming clear that security research is where I want to place more emphasis going forward.
 
 
 [01/04/2026]
 
 Work recently has been centered around XSS research and modern web security practices, particularly Content Security Policy.
-
 This has involved studying current standards, testing different scenarios, and writing custom scripts to support the process. It’s been engaging and has opened up several areas worth exploring further.
-
 For now, some of the tooling being developed will remain private. The intention is to avoid creating unnecessary obstacles while actively working on potential findings. Public contributions will continue, but more selectively.
 
 
@@ -74,33 +63,20 @@ For now, some of the tooling being developed will remain private. The intention 
 [08/04/2026]
 
 Progress has slowed due to personal circumstances, as a close family member has become seriously ill.
-
-Time has been spent focusing on being present and making the most of that, while still keeping some level of continuity with ongoing work where possible. Situations like this tend to shift perspective quite quickly.
-
-One thought that stands out is the idea of not letting negative experiences change who you are at your core. It’s simple, but it carries weight.
-
+Time has been spent focusing on being present and making the most of that, while still keeping some level of continuity with ongoing work where possible. Situations like this tend to shift perspective quite quickly. One thought that stands out is the idea of not letting negative experiences change who you are at your core. It’s simple, but it carries weight.
 Work will continue, but at a reduced pace for the time being.
-
-
 
 [09/04/2026]
 
 Following on from the previous entry, I want to address the tone of what I wrote. Frustration got the better of me, and while the underlying point about boundaries still stands, the way it was expressed could have been handled better.
-
 At the moment, the focus is shifting more clearly toward professional goals. That includes bug bounty work, certifications, and finding a stable administrative role to support that direction.
-
 As a result, public output may become less frequent, but that’s a trade-off in favor of long-term progress. The intention is still to return to consistent updates when the balance allows for it.
-
-
 
 [12/04/2026]
 
 Recent work has been focused on XSS research and the development of supporting tools.
-
 A small reporting script, H3tic_report.py, was created to help organize findings more efficiently. Alongside that, most of the effort has gone into a private tool that is not yet ready for release, but is already proving useful in streamlining parts of the workflow.
-
 There is a continued emphasis on understanding CSP behavior and refining approaches to identifying and testing XSS vectors.
-
 For now, some of this work will remain internal until it reaches a point where sharing it makes sense. The overall direction remains the same: building toward effective and consistent bug bounty work.
 
 [23/04/2026]
@@ -109,26 +85,32 @@ Hello Reader:
 
 Really happy with the response(on the whole) to h3ctic_report.py, thank-you kindly. It's been a fun time just looking at the web again(and seeing how much it has changed in the last decade especially(and area's where it's all too much the same for my taste)). Have found a few interesting things but nothing I can talk about publicly yet.Sorry the tool development publicly has taken a backseat but with all I'm doing it that was time management issue I'm standing by for a while.
 
-Don't get me wrong I will be updating this GitHub where I can but realistically this is just kind of a side thing I'm doing to have a thing to do so show the community all the things that I'm willing to share with the community: so basically just don't want to be delusional and things that the minor traction(how ever much i appreciate it), is simply enough of a foundation for an entire career so to speak(however much I do enjoy it). Have updated a few things in a minor way but truth be told(without saying too much for now). I've had allot going on IRL(unexpectedly), so have not really even put as much time into bug bounty as I would have liked.
+Don't get me wrong I will be updating this GitHub where I can but realistically this is just kind of a side thing I'm doing to have a thing to do so show the community all the things that I'm willing to share with the community: so basically just don't want to be delusional and things that the minor traction(how ever much i appreciate it), is simply enough of a foundation for an entire career so to speak(however much I do enjoy it). Have updated a few things in a minor way but truth be told(without saying too much for now). I've had allot going on IRL(unexpectedly), so have not really even put as much time into bug bounty as I would have liked. But considering everything thing's may have to just work in a balance like that(of working on this git hub and bug bounty's and other things)). This is the approach I'm taking for now: with significantly more output publicly and privately. 
 
-But considering everything thing's may have to just work in a balance like that(of working on this git hub and bug bounty's and other things)). This is the approach I'm taking for now: with significantly more output publicly and privately. 
-
- 
 [28/04/2026]
 
-Most recently have been more focused on refining scripts and methods for bug bounty work, have managed to get much needed updates to charli and addison, have 
-got signed up to a few bug bounty sites and have been testing my tools of some of them plus other sites, did a small write up about modern security in general, refactored a few things here and there, All just work in progress at the moment; but enjoying every little nuance: day-by-day. Super exciting time just to be a part of it all in any way.
+Most recently have been more focused on refining scripts and methods for bug bounty work, have managed to get much needed updates to charli and the have got signed up to a few bug bounty sites and have been testing my tools of some of them plus other sites, did a small write up about modern security in general, refactored a few things here and there, All just work in progress at the moment; but enjoying every little nuance: day-by-day. Super exciting time just to be a part of it all in any way. 
 
 [06/05/2026]:
 
 Hello again reader,
 
-Mostly been focused on the command line and C seeing as my game their is not as strong as it should be; so had to put time in(and from the results will have to put in a fair bit more) so nothing really to report publicly yet. Yes the tool that was put out yesterday was really just a show off idea that probably should have been kepqqt to myself but hey there are better tools out there anyway to my knowledge so just wanted to share my take on xss recon, it really was meant to look at form fields more but during the creation process, felt that this should be a separate script and will be kept private; and that mapping endpoints is still very useful: thus "jsmapper.py". Sorry I'm working on quite allot to just skill up  and not so much publicly: but these few months of mostly working on fundamentals will be invaluable to the longevity of my career. Not a great deal will be happening just yet: got a cool iOS vuln to write about when I've had time to work on exploiting it more(after waiting the responsible 90 day's(unless forced to be under NDA)), and also silly 2FA bypass via logic bug to write about after 70+ day's. That being written however: there are a fair few things that I can share with you later this week but I don't have time to do it at the moment(sorry), as real life call's and have a few thing's to take care of but will hopefully become clear at the end of the week and I'll do another entry later when I have time.
-
+Mostly been focused on the command line and C seeing as my game their is not as strong as it should be; so had to put time in(and from the results will have to put in a fair bit more) so nothing really to report publicly yet. Yes the tool that was put out yesterday was really just a show off idea that probably should have been kept to myself but hey there are better tools out there anyway to my knowledge so just wanted to share my take on xss recon, it really was meant to look at form fields more but during the creation process, felt that this should be a separate script and will be kept private; and that mapping endpoints is still very useful: thus "jsmapper.py". Sorry I'm working on quite allot to just skill up  and not so much publicly: but these few months of mostly working on fundamentals will be invaluable to the longevity of my career. Not a great deal will be happening just yet: got a cool iOS vuln to write about when I've had time to work on exploiting it more(after waiting the responsible 90 day's(unless forced to be under NDA)), and also silly 2FA bypass via logic bug to write about after 70+ day's. That being written however: there are a fair few things that I can share with you later this week but I don't have time to do it at the moment(sorry), as real life call's and have a few thing's to take care of but will hopefully become clear at the end of the week and I'll do another entry later when I have time.
 
 [06/05/2026] Part 2:
-
 Missed a great deal of today with meetings and the like, did get to play with a more modern windows system(fairly locked down too *tiphat* to the admin).
-But all in an all did not get the flow back just yet: read more about C code and started to structure what the rest of the year will look like: still working on it. Have an interesting puzzle as we all do in life: "what can i make it do?". But more to the point in the age of LLM's, A.I agent's what is there to do? Because the vast number of possibility's are monolithic. But may have found a few near and dear to by just beating heart.
+But all in an all did not get the flow back just yet: read more about C code and started to structure what the rest of the year will look like: still working on it. Have an interesting puzzle as we all do in life: "what can i make it do?". But more to the point in the age of LLM's, A.I agent's what is there to do? Because the vast number of possibility's are monolithic. But may have found a few near and dear to by just beating heart. Anyway... a few things to wrap up this week: one more meeting tomorrow and then finally free to focus on programming.
 
-Anyway... a few things to wrap up this week: one more meeting tomorrow and then finally free to focus on programming.  
+[30/05/2026]:
+
+Well even the best made plans etc, anyway sorry I've just been trying to sort my health out and thankfully things do seem to be slowly improving health wise. Been kinda working on a few small things but no real improvement just yet in the scheme of things. On the bright side with my new found admiration of health and a healthier lifestyle: things will improve vastly on the consistency paradigm(it is an important one). Have taken a small amount of time off as you may have noticed: good to be back to my hobby a bit but mostly have been just reading/writing C code in an attempt to start too skill up a bit more.
+
+Can't wait to be properly back in a few weeks(have a few things to get sorted IRL), but for now please enjoy: https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/ActiveDefender(lite)(POC).ps1
+
+and https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/ActiveDefender(POC).ps1. 
+
+Note:
+
+Sorry to just fire it off as POC but I can't test the code as no windows box at the moment; but i'll sort that at some point in the next few months as there are a fair few things I would like to do for windows.
+
+- gh05t5h311
