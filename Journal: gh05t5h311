@@ -1,4 +1,5 @@
 Security Journal — gh05t5h311
+
 Focus: Offensive/Defensive Security, Mostly interested in tooling(attack and defense),Network Security and specifically vulnerability analysis.
 
 [09/01/2026]
@@ -97,7 +98,9 @@ Hello again reader,
 
 Mostly been focused on the command line and C seeing as my game their is not as strong as it should be; so had to put time in(and from the results will have to put in a fair bit more) so nothing really to report publicly yet. Yes the tool that was put out yesterday was really just a show off idea that probably should have been kept to myself but hey there are better tools out there anyway to my knowledge so just wanted to share my take on xss recon, it really was meant to look at form fields more but during the creation process, felt that this should be a separate script and will be kept private; and that mapping endpoints is still very useful: thus "jsmapper.py". Sorry I'm working on quite allot to just skill up  and not so much publicly: but these few months of mostly working on fundamentals will be invaluable to the longevity of my career. Not a great deal will be happening just yet: got a cool iOS vuln to write about when I've had time to work on exploiting it more(after waiting the responsible 90 day's(unless forced to be under NDA)), and also silly 2FA bypass via logic bug to write about after 70+ day's. That being written however: there are a fair few things that I can share with you later this week but I don't have time to do it at the moment(sorry), as real life call's and have a few thing's to take care of but will hopefully become clear at the end of the week and I'll do another entry later when I have time.
 
-[06/05/2026] Part 2:
+[06/05/2026] 
+
+Part 2:
 Missed a great deal of today with meetings and the like, did get to play with a more modern windows system(fairly locked down too *tiphat* to the admin).
 But all in an all did not get the flow back just yet: read more about C code and started to structure what the rest of the year will look like: still working on it. Have an interesting puzzle as we all do in life: "what can i make it do?". But more to the point in the age of LLM's, A.I agent's what is there to do? Because the vast number of possibility's are monolithic. But may have found a few near and dear to by just beating heart. Anyway... a few things to wrap up this week: one more meeting tomorrow and then finally free to focus on programming.
 
@@ -111,6 +114,68 @@ and https://github.com/ZeroDayGang-gh05t5h311/CMDUtilities/blob/main/ActiveDefen
 
 Note:
 
-Sorry to just fire it off as POC but I can't test the code as no windows box at the moment; but i'll sort that at some point in the next few months as there are a fair few things I would like to do for windows.
+Sorry to just fire it off as POC but I can't test the code as no windows box at the moment; but I'll sort that at some point in the next few months as there are a fair few things I would like to do for windows.
 
 - gh05t5h311
+
+
+ 08/08/2026:
+
+ Hello all, it's been some time since I have made a post: So here is the deal with windows(regarding my last entry): this is a very
+ interesting time to be an amateur in computer security or anyone really, but that is getting a little off topic. The last few months I've had severe health issues mentally and physically but am happy to report that my health seems to be getting a little better day-by-day(sans the fact it was not great last night(hence why this is late)), The path carved out is clear: but is very upstream(with regards to real security and health), it is a slow progress: but still progress none the less, taking a break was perhaps the best thing that could be done for myself as it allowed me to see things that I needed to see. 
+
+ I have a file upload bug to to play with this week that has RCE implications, but I cannot and will not comment on this in detail publicly as that would not be responsible disclosure. This is something that requires a great deal more investigation and will be worked on this week. So sorry for the up and down nature of my work(previous entry's can shed light on this). There is a large number of things that where meant to be worked on that I have not yet: but one thing that has stayed consistent is my love for this industry. Now I need to take the time to get a solid. Would like to note that it is nothing more than a hobby I've been very in and out of for some time now and things have been very sporadic. This is not something that can be live with to take it to the next level so it's a fairly simple solution where time has been taken to get my mind right(and perhaps there is still a bit to work on there). 
+
+
+ This is a report I sent to a few company's but seeing as they don't want to admit how easily this can be broken and it's been 90 days..
+
+
+time to disclose this publicly and move on to something else. 
+
+ "Hello Security Team,
+
+I am writing to report a potential vulnerability in the account recovery / password reset flow that may allow unauthorized password changes under certain conditions.
+
+Summary:
+It appears possible to initiate a password reset using a known username or email address, and then supply a phone number that is not originally associated with the target account but is controlled by the requester. If accepted by the system, this could allow an attacker to complete the reset process and gain access to the account.
+
+Potential Impact:
+If confirmed, this issue could allow account takeover without access to the original email address or phone number on file. This may be exploitable at scale if the flow can be automated.
+
+Environment:
+Platform(s): (Snapchat/tinder/Instagram)
+Device(s): (e.g., iOS /Android/Linux/ 
+Version / Browser: (if known)
+Steps to Reproduce (Observed Behavior):
+
+0) Navigate to the password reset / account recovery flow
+1) Enter a valid username or email associated with an account
+2) When prompted for recovery options, provide a phone number under the requester’s control
+3) Observe whether the system accepts this number and proceeds with verification(most of the time it does)
+
+Expected Behavior:
+The system should only allow password reset through pre-verified contact methods already associated with the account or require strong additional identity verification.
+
+Actual Behavior:
+The system appears to accept alternate contact information during the recovery flow, which may enable unauthorized password resets.
+Notes / Uncertainties:
+
+This report is based on observed behavior and may depend on specific edge cases or account states
+Additional validation may be required to confirm full exploitability
+I have not attempted large-scale testing or exploitation
+Suggested Remediation:
+Restrict password reset channels strictly to previously verified contact methods
+Require step-up verification (e.g., prior device recognition, MFA, or email confirmation) before allowing changes to recovery information
+Log and rate-limit recovery attempts to prevent automation
+
+I am happy to provide additional details or clarification if needed.
+
+Thank you for your time and for maintaining the security of your platform.
+
+Best regards,
+
+- gh05t5h311"
+
+- Please enjoy this one: it's really fun but also a bit scary in the sense that the attack is very easy to pull of and the impact while not very high: is somewhat of an issue to the end user. The really scary part would be if someone automated this with a python script or something of a kind, then it is still not a great impact to the company's bottom line but can be a harsh attack for the end user(then that does affect it if they lose customers).
+
+Should note that I found this 8 YEARS ago on tinder... and only just recently realized it worked on other platforms too. *sigh*. but in any case I have a nasty bug on iOS to research(technically a chain of bugs) that are much more interesting but enjoy.
